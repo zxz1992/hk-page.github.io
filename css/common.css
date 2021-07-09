@@ -1,0 +1,206 @@
+* {
+    padding: 0
+}
+
+*, p {
+    margin: 0
+}
+
+html {
+    font-size: 16px
+}
+
+html, html body {
+    width: 100%;
+    overflow-x: hidden
+}
+
+html a, html a:focus, html a:hover {
+    color: #000;
+    text-decoration: none
+}
+
+html .common-btn {
+    margin: 0 auto;
+    width: 3.75rem;
+    height: 1.625rem;
+    border: .125rem solid #b11d23;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: AlibabaPuHuiTi_2_55_Regular;
+    font-size: .625rem;
+    font-weight: 700;
+    font-stretch: normal;
+    letter-spacing: 0;
+    color: #b11e23
+}
+
+li, ol, ul {
+    list-style: none;
+    margin-bottom: 0
+}
+
+.page-box {
+    min-height: 100vh;
+    background: #ededed
+}
+
+.page-box > header {
+    width: 100%;
+    height: 11rem;
+    background-color: #fff;
+    display: flex;
+    padding-top: 2.688rem;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3.063rem
+}
+
+.page-box > header img.logo {
+    width: 10.875rem;
+    height: 2.813rem
+}
+
+.page-box > header nav {
+    margin-top: 2.813rem;
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+
+.page-box > header nav ul.nav-box {
+    padding: 0 1rem;
+    width: 40rem;
+    display: flex;
+    font-family: SourceHanSansCN-Medium;
+    font-size: .875rem;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: .978rem;
+    letter-spacing: 0;
+    justify-content: space-between
+}
+
+.page-box > header nav ul.nav-box li a {
+    position: relative;
+    padding: 0 .15rem .688rem;
+    display: flex;
+    align-items: center
+}
+
+.page-box > header nav ul.nav-box li a:after {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: .125rem;
+    background: transparent
+}
+
+.page-box > header nav ul.nav-box li.active a:after, .page-box > header nav ul.nav-box li:hover a:after {
+    background: #b11e23
+}
+
+.page-box > .content-box {
+    max-width: 84.25rem;
+    width: 100%;
+    margin: 0 auto
+}
+
+.page-box > footer {
+    width: 100%;
+    min-height: 6.813rem;
+    background-color: #fff
+}
+
+.page-box > footer .text-info {
+    max-width: 84.25rem;
+    width: 100%;
+    margin: 0 auto
+}
+
+.page-box > footer .text-info ul.top-box {
+    display: flex;
+    border-bottom: .063rem solid #e5e5e5;
+    padding-bottom: 1rem;
+    padding-top: 1.215rem;
+    justify-content: center
+}
+
+.page-box > footer .text-info ul.top-box li {
+    height: 1rem;
+    border-right: 1px solid #666;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    width: 8.3rem
+}
+
+.page-box > footer .text-info ul.top-box li:last-child {
+    border-right: none
+}
+
+.page-box > footer .text-info div.bottom-box, .page-box > footer .text-info ul.top-box li a {
+    font-family: SourceHanSansCN-Regular;
+    font-size: .875rem;
+    font-weight: 400;
+    font-stretch: normal;
+    letter-spacing: 0;
+    color: #666
+}
+
+.page-box > footer .text-info div.bottom-box {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center
+}
+
+@media only screen and (max-width: 1300px) {
+    html {
+        font-size: 14px
+    }
+
+    html .common-btn {
+        width: 39px;
+        height: 18px
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 12px
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    html .page-box > footer .text-info ul.top-box li {
+        width: 11.3rem
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    html {
+        font-size: 9px
+    }
+
+    html * {
+        font-size: 16px
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    html {
+        font-size: 8px
+    }
+
+    html * {
+        font-size: 14px !important
+    }
+
+    html .page-box header {
+        margin-bottom: 0
+    }
+}

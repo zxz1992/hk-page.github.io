@@ -1,0 +1,202 @@
+.page-box .section-1 {
+  margin-bottom: 4.813rem
+}
+img{
+  width: 100%;
+}
+.page-box .section-1 img {
+  width: 100%
+}
+
+.page-box .section-1 p {
+  height: 7.813rem;
+  background-color: #fff;
+  font-family: SourceHanSansCN-Medium;
+  font-size: 1.625rem;
+  font-weight: 400;
+  font-stretch: normal;
+  line-height: .978rem;
+  letter-spacing: 0;
+  color: #000;
+  display: flex;
+  align-items: center;
+  padding: 0 1.875rem
+}
+
+.page-box .section-2 {
+  width: 100%
+}
+
+.page-box .section-2 ul {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 0 .7rem
+}
+
+.page-box .section-2 ul li {
+  width: 5.75rem;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  padding-bottom: 1rem
+}
+
+.page-box .section-2 ul li a {
+  font-family: SourceHanSansCN-Regular;
+  font-size: 1rem;
+  font-weight: 700;
+  font-stretch: normal;
+  letter-spacing: 0;
+  color: #545454
+}
+
+.page-box .section-2 ul li:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: .125rem;
+  content: "";
+  display: block;
+  background-color: transparent
+}
+
+.page-box .section-2 ul li.active:after,
+.page-box .section-2 ul li:hover:after {
+  background-color: #b11e23
+}
+
+.page-box .section-3 {
+  width: 100%;
+  padding-top: 3.375rem
+}
+
+.page-box .section-3 ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between
+}
+
+.page-box .section-3 ul li {
+  width: 31.208%;
+  padding-top: 24.907%;
+  position: relative;
+  margin-bottom: 2.5rem
+}
+
+.page-box .section-3 ul li a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #fff;
+  overflow: hidden
+}
+
+.page-box .section-3 ul li a:hover img {
+  -webkit-animation: mymove 1s 1;
+  animation: mymove 1s 1;
+  transform: scale(1.5)
+}
+
+@-webkit-keyframes mymove {
+  0% {
+    transform: scale(1)
+  }
+
+  to {
+    transform: scale(1.5)
+  }
+}
+
+@keyframes mymove {
+  0% {
+    transform: scale(1)
+  }
+
+  to {
+    transform: scale(1.5)
+  }
+}
+
+.page-box .section-3 ul li a .img {
+  width: 100%;
+  object-fit: cover;
+  /*transform: scale(1);*/
+  /*transition: all;*/
+  height: 155px;
+}
+
+.page-box .section-3 ul li a .text-describe {
+  padding: 1.688rem 1.564rem 0;
+  line-height: 1.875rem;
+  position: relative;
+  z-index: 2;
+  background-color: #fff
+}
+
+.page-box .section-3 ul li a .text-describe p {
+  font-family: SourceHanSansCN-Regular;
+  font-size: 1rem;
+  font-weight: 400;
+  font-stretch: normal;
+  letter-spacing: 0;
+  color: #000;
+  text-overflow: ellipsis;
+  line-height: 1.5rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+@media only screen and (max-width:1300px) {
+  .page-box .section-3 ul li a .img {
+    height: 11vw;
+  }
+}
+@media only screen and (max-width:1050px) {
+  .page-box .section-3 ul li {
+    width: 48%;
+    padding-top: 36%
+  }
+  .page-box .section-3 ul li a .img {
+    height: 22vw;
+  }
+}
+@media only screen and (max-width:800px) {
+  .page-box .section-3 ul li a .img {
+    height: 18vw;
+  }
+}
+@media only screen and (max-width:520px) {
+  .page-box .section-3 ul li a .text-describe p {
+    line-height: 2.5rem
+  }
+
+  .page-box .section-1 p {
+    line-height: 2rem
+  }
+
+  .page-box .section-2 ul li {
+    width: 7.5rem
+  }
+  .page-box .section-2 ul li.zhazha{
+    width: 14rem !important;
+  }
+
+  .page-box .section-2 ul li a {
+    white-space: nowrap;
+    font-size: 2em
+  }
+
+  .page-box .section-3 ul li {
+    width: 100%;
+    padding-top: 70%
+  }
+  .page-box .section-3 ul li a .img {
+    height: 32vw;
+  }
+}
